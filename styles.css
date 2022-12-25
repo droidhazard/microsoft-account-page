@@ -45,6 +45,17 @@ body {
   color: #313131;
 }
 
+.grey-text-sm {
+  color: var(--lightgrey-text);
+  font-size: 0.8rem;
+}
+
+.col-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 /* ./utility-classes end */
 
 /* NAVBAR */
@@ -172,6 +183,7 @@ body {
   flex-direction: row;
 
 }
+
 .action {
   display: flex;
   flex-direction: row;
@@ -179,6 +191,7 @@ body {
   margin-right: 2rem;
   cursor: pointer;
 }
+
 .action:hover {
   color: var(--link);
 }
@@ -214,6 +227,51 @@ body {
   font-size: 0.8rem;
 }
 
+/* ROWS SECTION */
+.rows-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6vh;
+}
+
+.row-card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* box-shadow: 10px 10px 41px -30px rgba(0,0,0,0.75); */
+  border-right: 2px solid #e7e7e7;
+  border-bottom: 2px solid #e7e7e7;
+}
+
+.row-card-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.row-card-head-icon i,
+.row-card-head-action i {
+  color: var(--link);
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+
+.row-card-head-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-card-title {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
 
 main.container {
   margin: 0 auto;
@@ -236,25 +294,26 @@ main.container {
 /* ./main-container end */
 
 /* Mobile Devices only  */
-@media only screen and (max-width: 600px) {
-}
-/* Tablets and Mobile*/ 
+@media only screen and (max-width: 600px) {}
+
+/* Tablets and Mobile*/
 @media only screen and (max-width: 991px) {
-    .main-top-section {
-      flex-direction: column;
-    }
-    .top-actions-section {
-      flex-direction: column;
-    }
-    .action-info {
-      flex-direction: row;
-    }
-    .action-category {
-      display: none;
-    }
-}
-/* Computers and Above*/ 
-@media only screen and (min-width: 992px) {
+  .main-top-section {
+    flex-direction: column;
+  }
 
+  .top-actions-section {
+    flex-direction: column;
+  }
+
+  .action-info {
+    flex-direction: row;
+  }
+
+  .action-category {
+    display: none;
+  }
 }
 
+/* Computers and Above*/
+@media only screen and (min-width: 992px) {}
