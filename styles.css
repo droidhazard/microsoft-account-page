@@ -29,6 +29,7 @@ body {
 ._2rem {
   font-size: 2rem;
 }
+
 .nav-text-thin {
   font-weight: 300;
   font-size: 15px;
@@ -48,12 +49,31 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
+.navbar ul li {
+  height: 100%;
+}
+
 .nav-col-left,
 .nav-col-right {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 100%;
+  list-style: none;
+}
+
+.nav-dropdown-button li {
+  display: block;
+}
+
+.nav-dropdown-button {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  z-index: 999;
+  display: none;
 }
 
 .nav-button {
@@ -67,7 +87,8 @@ body {
   padding: 0 0.5rem;
 }
 
-.nav-profile-circle {
+.nav-button i {
+  margin-left: 5px;
 }
 
 .nav-profile-circle img {

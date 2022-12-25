@@ -20,22 +20,34 @@
 <body>
   <!-- NAVBAR -->
   <nav class="navbar">
-    <section class="nav-col-left">
-      <a href="#!" class="nav-button"><i class="material-icons text-white _2rem">apps</i></a>
-      <a href="#!" class="nav-button">Microsoft account</a>
-      <a href="#!" class="nav-button nav-text-thin">Your info</a>
-      <a href="#!" class="nav-button nav-text-thin">Privacy</a>
-      <a href="#!" class="nav-button nav-text-thin">Security</a>
-      <a href="#!" class="nav-button nav-text-thin">Payment & billing</a>
-      <a href="#!" class="nav-button nav-text-thin">Services & subscriptions</a>
-      <a href="#!" class="nav-button nav-text-thin">Devices</a>
-    </section>
-    <section class="nav-col-right">
+    <ul class="nav-col-left">
+      <li><a href="#!" class="nav-button"><i class="material-icons text-white _2rem">apps</i></a></li>
+      <li><a href="#!" class="nav-button">Microsoft account</a></li>
+      <li><a href="#!" class="nav-button nav-text-thin">Your info</a></li>
+      <li><a href="#!" class="nav-button nav-text-thin">Privacy</a></li>
+      <li><a href="#!" class="nav-button nav-text-thin">Security</a></li>
+      <li><a href="#!" class="nav-button nav-text-thin">Payment & billing <i class="fa-solid fa-angle-down"></i></a>
+      </li>
+      <li>
+        <div class="nav-dropdown-button">
+          <ul>
+            <li><a href="#!">Order history</a></li>
+            <li><a href="#!">Payment history</a></li>
+            <li><a href="#!">Address book</a></li>
+            <li><a href="#!">Billing help</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#!" class="nav-button nav-text-thin">Services & subscriptions</a></li>
+      <li><a href="#!" class="nav-button nav-text-thin">Devices</a></li>
+    </ul>
+    <ul class="nav-col-right">
       <a href="#!" class="nav-button"><i class="material-icons">question_mark</i></a>
       <a href="#!" class="nav-profile-circle nav-button"><img src="./user.jpg" alt=""></a>
-    </section>
+    </ul>
   </nav>
-  <p>Hello World</p>
+
+  
 </body>
 
 </html>
