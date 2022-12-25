@@ -185,8 +185,8 @@ body {
 
 
 .action-circle {
-  height: 3rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
   /* border-radius: 50%; */
   shape-outside: circle();
   clip-path: circle();
@@ -237,19 +237,24 @@ main.container {
 
 /* Mobile Devices only  */
 @media only screen and (max-width: 600px) {
-
 }
 /* Tablets and Mobile*/ 
 @media only screen and (max-width: 991px) {
     .main-top-section {
       flex-direction: column;
     }
+    .top-actions-section {
+      flex-direction: column;
+    }
+    .action-info {
+      flex-direction: row;
+    }
+    .action-category {
+      display: none;
+    }
 }
 /* Computers and Above*/ 
 @media only screen and (min-width: 992px) {
-  .action-circle {
-    height: 2.5rem;
-    width: 2.5rem;
-  }
+
 }
 
