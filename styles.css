@@ -15,6 +15,7 @@
   padding: 0;
   box-sizing: border-box;
   /* border: 1px solid red; */
+  overflow-x: hidden;
 }
 
 html,
@@ -47,14 +48,20 @@ body {
 
 .grey-text-sm {
   color: var(--lightgrey-text);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
-.col-1 {
+.row {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+/* .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+
 
 /* ./utility-classes end */
 
@@ -238,13 +245,19 @@ body {
   width: 100%;
   background-color: #fff;
   border-radius: 7px;
+  /* margin-bottom: 3px; */
   padding: 0.5rem 0.5rem;
   display: flex;
+  flex-direction: column;
   flex-direction: row;
   align-items: center;
-  /* box-shadow: 10px 10px 41px -30px rgba(0,0,0,0.75); */
   border-right: 2px solid #e7e7e7;
   border-bottom: 2px solid #e7e7e7;
+}
+
+.row-card:hover {
+  background-color: #e4e4e4;
+  cursor: pointer;
 }
 
 .row-card-head {
@@ -255,11 +268,13 @@ body {
   justify-content: space-between;
 }
 
+
 .row-card-head-icon i,
 .row-card-head-action i {
   color: var(--link);
   font-size: 1.2rem;
   margin: 0 1rem;
+  text-shadow: 3px 5px 14px rgba(0, 0, 0, 0.1);
 }
 
 .row-card-head-info {
@@ -270,7 +285,9 @@ body {
 .row-card-title {
   font-weight: 500;
   font-size: 0.9rem;
+  margin-bottom: 5px;
 }
+
 
 
 main.container {
