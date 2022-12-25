@@ -110,6 +110,11 @@ main.container {
   width: 95%;
 }
 
+.main-top-section {
+  background-color: red;
+  width: 100%;
+}
+
 @media only screen and (min-width: 601px) {
   .container {
     width: 90%;
