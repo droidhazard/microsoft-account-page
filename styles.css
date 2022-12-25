@@ -61,6 +61,7 @@ body {
   align-items: center;
   height: 100%;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .nav-dropdown-button li {
@@ -101,3 +102,24 @@ body {
 .nav-button:hover {
   background-color: var(--accent-blue-dark);
 }
+
+/* MAIN CONTAINER */
+main.container {
+  margin: 0 auto;
+  max-width: 1366px;
+  width: 95%;
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 70%;
+  }
+}
+
+/* ./main-container end */
