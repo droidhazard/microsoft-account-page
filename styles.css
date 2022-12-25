@@ -185,9 +185,11 @@ body {
 
 
 .action-circle {
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  /* border-radius: 50%; */
+  shape-outside: circle();
+  clip-path: circle();
   background-color: var(--lightblue-circle);
   display: flex;
   align-items: center;
@@ -245,8 +247,9 @@ main.container {
 }
 /* Computers and Above*/ 
 @media only screen and (min-width: 992px) {
-  .container {
-    /* background-color: green; */
+  .action-circle {
+    height: 2.5rem;
+    width: 2.5rem;
   }
 }
 
