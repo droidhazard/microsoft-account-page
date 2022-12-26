@@ -49,6 +49,11 @@ body {
 .grey-text-sm {
   color: var(--lightgrey-text);
   font-size: 0.7rem;
+  text-decoration: none;
+}
+
+a.grey-text-sm:hover {
+  text-decoration: underline;
 }
 
 .row {
@@ -56,6 +61,7 @@ body {
   flex-direction: row;
   align-items: center;
 }
+
 .action-link {
   color: var(--link);
   text-decoration: none;
@@ -307,6 +313,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .column-card {
   height: 424px;
   width: auto;
@@ -337,6 +344,7 @@ body {
   font-size: 0.9rem;
   margin: 15px 20px;
 }
+
 .column-card-body-title {
   overflow-y: none;
 }
@@ -346,17 +354,20 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .column-card-body-image img {
   width: 150px;
   margin: auto auto;
   height: 100%;
 }
+
 .card-bottom {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
+
 .column-card-action {
   height: 47px;
   cursor: pointer;
@@ -365,26 +376,30 @@ body {
   align-items: center;
   overflow-y: none;
 }
+
 .column-card-action:hover {
   background-color: #e4e4e4;
 }
 
 /* FOOTER */
-.page-footer {
-  margin-top: 10vh;
-  background-color: red;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+
 .footer-language-section {
   display: flex;
   align-items: center;
 }
+
 .footer-language-section i {
   margin: 10px;
 }
 
+.footer-links-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer-item {
+  margin: 0 10px;
+}
 
 
 
@@ -395,10 +410,14 @@ main.container {
   max-width: 1366px;
   width: 90%;
 }
+
 footer.container {
   margin: 10vh auto 0 auto;
   max-width: 1366px;
   width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 
@@ -417,7 +436,11 @@ footer.container {
 /* ./main-container end */
 
 /* Mobile Devices only  */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  .footer-links-section {
+    justify-content: center;
+  }
+}
 
 /* Tablets and Mobile*/
 @media only screen and (max-width: 991px) {
@@ -435,6 +458,9 @@ footer.container {
 
   .action-category {
     display: none;
+  }
+  footer.container {
+    flex-direction: column;
   }
 }
 
