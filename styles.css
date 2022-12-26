@@ -238,14 +238,14 @@ body {
 .rows-section {
   display: flex;
   flex-direction: column;
-  margin-top: 6vh;
+  margin: 6vh 0;
 }
 
 .row-card {
   width: 100%;
   background-color: #fff;
   border-radius: 7px;
-  /* margin-bottom: 3px; */
+  margin-bottom: 3px;
   padding: 0.5rem 0.5rem;
   display: flex;
   flex-direction: column;
